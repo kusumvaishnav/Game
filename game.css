@@ -1,0 +1,179 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    display: grid;
+    grid-template-columns: repeat(4, 120px); 
+    gap: 15px; 
+}
+
+.card {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card.flip {
+    transform: rotateY(180deg);
+}
+
+.card .front,
+.card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card .front {
+    background-color: #333;
+}
+
+.card .back {
+    background-color: #fff;
+    background-size: cover; 
+    background-position: center; 
+    transform: rotateY(180deg); 
+}
+
+#info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#restart {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#restart:hover {
+    background-color: #218838;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+#game-heading {
+    font-size: 2.5em;
+    margin-top: 20px;
+    color: #333;
+    text-align: center;
+}
+
+#game-container {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card.flip {
+    transform: rotateY(180deg);
+}
+
+.card .front,
+.card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card .front {
+    background-color: #333;
+}
+
+.card .back {
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(180deg);
+}
+
+#info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#restart {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#restart:hover {
+    background-color: #218838;
+}
+
+#congratulations {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#congratulations h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+#congratulations p {
+    margin: 10px 0 0;
+}
+
+#play-again {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#play-again:hover {
+    background-color: #0056b3;
+}
